@@ -5,6 +5,7 @@ my @names = $file.get.words;
 
 my %matches;
 my %sets;
+my $r2 = 0;
 
 for $file.lines -> $line {
 	my ($pairing, $result) = $line.split(' | ');
