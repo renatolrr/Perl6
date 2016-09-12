@@ -1,7 +1,13 @@
-#Instalar perl6 ben debian 8
+#Instalar perl6 en debian 8
 ```
-git clone https://github.com/tadzik/rakudobrew ~/.rakudobrew
-export PATH=~/.rakudobrew/bin:$PATH
-rakudobrew build moar 2015.12
-rakudobrew build panda # alternative: build zef
+apt-get install build-essential git  
+  
+git clone https://github.com/tadzik/rakudobrew ~/.rakudobrew  
+echo 'export PATH=~/.rakudobrew/bin:$PATH' >> ~/.bashrc  
+source ~/.bashrc  
+  
+rakudobrew build moar  
+rakudobrew build panda  
+  
+panda install Task::Star  
 ```
